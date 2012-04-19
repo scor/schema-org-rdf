@@ -1,26 +1,27 @@
-<div vocab="http://schema.org/" about="#manu" typeof="Person">
-  <span property="name">Manu Sporny</span>
-  <div rel="image">
-    <img src="manu.jpg" />
+<div vocab="http://schema.org/" typeof="Person">
+  <span property="name">Jane Doe</span>
+  <img src="janedoe.jpg" property="image" />
+
+  <span property="jobTitle">Professor</span>
+  <div property="address" typeof="PostalAddress">
+    <span property="streetAddress">
+      20341 Whitworth Institute
+      405 N. Whitworth
+    </span>
+    <span property="addressLocality">Seattle</span>,
+    <span property="addressRegion">WA</span>
+    <span property="postalCode">98052</span>
   </div>
+  <span property="telephone">(425) 123-4567</span>
+  <a href="mailto:jane-doe@xyz.edu" property="email">
+    jane-doe@xyz.edu</a>
 
-  <span property="jobTitle">Founder/CEO</span>
-  <div rel="address">
-    <div about="#manu-address" typeof="PostalAddress">
-      <span property="streetAddress">1700 Kraft Drive, Suite 2408</span>
-      <span property="addressLocality">Blacksburg</span>,
-      <span property="addressRegion">VA</span>
-      <span property="postalCode">24060</span>
-    </div>
-  </div>
-  <span property="telephone">(540) 961-4469</span>
-  <a rel="email" href="mailto:msporny@digitalbazaar.com">msporny@digitalbazaar.com</a>
+  Jane's home page:
+  <a href="www.janedoe.com" property="url">janedoe.com</a>
 
-  Manu's home page:
-  <a rel="url" href="http://manu.sporny.org/">manu.sporny.org</a>
-
-  Colleagues:
-  <a rel="colleagues" href="http://example.com/alice">Alice Jones</a>
-  <a rel="colleagues" href="http://example.com/bob">Bob Smith</a>
+  Graduate students:
+  <a href="www.xyz.edu/students/alicejones.html" property="colleagues">
+    Alice Jones</a>
+  <a href="www.xyz.edu/students/bobsmith.html" property="colleagues">
+    Bob Smith</a>
 </div>
-
