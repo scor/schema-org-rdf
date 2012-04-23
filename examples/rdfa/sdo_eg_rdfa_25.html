@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Web Schemas TF: Schema.org tests: test 25 (format rdfa)</title>
+</head>
+<body>
+
+<div vocab="http://schema.org/" typeof="MusicAlbum">
+  <h1 property="name"> King of Limbs </h1>
+  <meta content="/artist/radiohead/album/the-king-of-limbs" property="url" />
+  <img src="king-of-limbs.jpg" property="image" />
+  <meta content="8" property="numTracks" />
+  <meta content="Alt/Punk" property="genre" />
+
+  <h2 property="byArtist" typeof="MusicGroup">
+    <span property="name">Radiohead</span>
+  </h2>
+
+  <h3>Sample Tracks</h3>
+    <div property="tracks" typeof="MusicRecording">
+      <span property="name">Bloom</span>
+        <meta content="/artist/radiohead/album/the-king-of-limbs/track/bloom" property="url" />
+        <meta content="PT314S" property="duration" />
+      </span>
+    </div>
+    <div property="tracks" typeof="MusicRecording">
+    <span property="name">Morning Mr Magpie</span>
+      <meta content="/artist/radiohead/album/the-king-of-limbs/track/morning-mr-magpie" property="url" />
+      <meta content="PT280S" property="duration" />
+    </span>
+  </div>
+</div>
+
+</body>
+</html>
