@@ -5,7 +5,7 @@ Errors in Person example: http://schema.org/Person
   Should use TEL scheme:
     <span itemprop="telephone">(425) 123-4567</span>
     should be:
-    <a rel="telephone" href="tel:14251234567">(425) 123-4567</a>
+    <a property="telephone" href="tel:14251234567">(425) 123-4567</a>
   Bad URLs: <a href="www.janedoe.com" ...
             <a href="www.xyz.edu/students/alicejones.html" ...
             <a href="www.xyz.edu/students/bobsmith.html" ...
@@ -35,7 +35,31 @@ Error in GeoCoordinates: http://schema.org/GeoCoordinates
   First div element is not closed, should be
   <div itemscope itemtype="http://schema.org/Place">
 
-Error in http://schema.org/CivicStructure
-  should be:
-  <meta itemprop="openingHours" content="Mo-Fr 09:00-17:30">Mon-Fri 9am - 5:30pm</meta>
+Errors in Place example 2 (#4): http://schema.org/Place
+  the h1 element should be closed properly
 
+Errors in Table example (#16): http://schema.org/Table
+  unclosed <tr>
+    <tr><th>President</th><th>Party</th><tr>
+    <tr><th>President</th><th>Party</th></tr>
+
+Errors in PostalAddress example (#17): http://schema.org/PostalAddress
+  @itemtype needs to be a absolute URI.
+  <div itemscope itemtype="schema.org/PostalAddress">
+  <div itemscope itemtype="http://schema.org/PostalAddress">
+
+Errors in ImageObject example (#19): http://schema.org/ImageObject
+  @itemtype needs to be a absolute URI.
+  <div itemscope itemtype="schema.org/ImageObject">
+  <div itemscope itemtype="http://schema.org/ImageObject">
+
+Errors in EducationalOrganization example (#23): http://schema.org/EducationalOrganization
+  @itemtype needs to be a absolute URI.
+  <div itemscope itemtype="schema.org/PostalAddress">
+  <div itemscope itemtype="http://schema.org/PostalAddress">
+
+Errors in MusicAlbum example (#25): http://schema.org/MusicAlbum
+  www.schema.org needs to be schema.org
+  two extra </span> which don't need to be there
+
+In general, schema:url should be embedded using <link> instead of <meta>
